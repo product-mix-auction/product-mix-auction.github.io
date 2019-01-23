@@ -179,7 +179,7 @@ button:focus .visually-hidden {
 	.pic1 {
 	margin-top:2em;
 	margin-bottom:0em;
-	margin-left:0em;
+	margin-left:1em;
 	margin-right:0em;
 	}
 
@@ -198,14 +198,14 @@ button:focus .visually-hidden {
 	}
 	
 	.picwidth65 {
-	width:75%
+	width:85%
 	}
 
 	.picwidth75 {
-	width:80%
+	width:85%
 	}
 
 	.picwidth85 {
-	width:88%
+	width:90%
 	}
 }
