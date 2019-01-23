@@ -1,0 +1,222 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Product-Mix Auction Software</title>
+  
+  <meta name="description" content="The Product-Mix Auction is a single-round sealed-bid auction for multiple units of multiple distinct goods.  We provide software for three different Product-Mix Auctions.">
+  
+  <meta name="author" content="Paul Klemperer">  
+  
+  <!link rel="stylesheet" href="https://www.well-typed.com/css/wt.css">
+  
+  <link href="bootstrap.min.css" rel="stylesheet">
+  
+  <!link href="sticky-footer-navbar.css" rel="stylesheet">
+
+  <l!ink href="jumbotron-narrow.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+  <div class="body">
+    <!div class="text">
+		
+	<div class="container">
+	  <div class="row" style="margin-bottom:0em">
+        <div class="col-md-6">
+		
+		<h1 style="margin-bottom:2ex" >Product-Mix Auction Software</h1>
+	<p style="margin-bottom:3ex">
+      Product-Mix Auctions are easy-to-use, single-round, sealed-bid, procedures to sell, or procure, <i>Multiple Units of Multiple Related Goods</i>. 
+	  They allow both the bidders and the auctioneer to express rich preferences about how the allocations they receive depend on the auction prices.
+    </p>
+
+	<p>
+	<article>
+	  Our <strong>Standard Version</strong> is a generalisation of the Bank of England's Indexed Long-Term Repo (ILTR) auction (described <a href="https://www.nuffield.ox.ac.uk/users/klemperer/productmix.pdf">here</a>). The Bank uses this auction monthly to allocate loans against different qualities of collateral.<br>
+	
+	  <div style="margin-top:10px" id="more-1" class="fulltext">
+		<ul>
+		<li>Bidders simultaneously make sets of bids. Each bidder can make as many bids as desired.</li>
+		<li>Each of a bidder's bids specifies:
+			<ul>
+				<li>a good,</li>
+				<li>a number of units to be bought of that good, and</li>
+				<li>a maximum per-unit price for that good.</li>
+			</ul>
+        <li>A bidder can make bids on as many goods as desired.</li>
+		<li>The auctioneer can permit "OR" bids. An "OR" bid specifies:
+			<ul>
+				<li>a list of goods,</li>
+				<li>a total number of units to be bought of any of the goods in the list, and</li>
+				<li>a maximum per-unit price for <i>each</i> good in the list.</li>		
+			</ul>
+			--the auction accepts the offer on <i>at most one</i> of the goods listed by an "OR" bid (whichever is best for the bidder, given the prices set by the auction).</li>
+		<li>The auctioneer can permit bidders to express even more sophisticated preferences.</li>
+		<li>The auctioneer can express rich preferences about how the numbers of units of the different varieties to be sold is determined.</li>
+        </ul>
+	  </div>
+		<button style="margin-top:10px" aria-expanded="false" aria-controls="more-1" class="toggle-content" hidden><span class="text">Read More</span> <span class="visually-hidden">about the Standard Version</span></button>
+	</article>
+	</p>
+	
+	<p>
+	<article>
+	  Our <strong>Version for Budget-Constrained Bidders</strong> may be useful when, e.g., a country's creditors exchange their claims (nominal amounts of debt) for a choice among new debt instruments, or an acquired firm’s shareholders exchange their holdings (numbers of shares) for a choice of cash or new shares. This auction was originally developed for the Government of Iceland.<br>
+	  
+	  <div style="margin-top:10px" id="more-2" class="fulltext">
+		<ul>
+		<li>Bidders simultaneously make sets of bids. Each bidder can make as many bids as desired.</li>
+		<li>Each of a bidder's bids specifies:
+			<ul>
+				<li>a good,</li>
+				<li>a budget (e.g., nominal amount of debt, or number of shares) to be exchanged for that good, and</li>
+				<li>a maximum per-unit price for that good.</li>
+			</ul>
+		<li>A bidder can make bids on as many goods as desired.</li>	
+        <li>The auctioneer can permit "OR" bids. An "OR" bid specifies
+			<ul>
+				<li>a list of goods,</li>
+				<li>a total budget (e.g., nominal amount of debt, or number of shares) to be exchanged for any of the goods in the list, and</li>
+				<li>a maximum per-unit price for <i>each</i> good in the list.</li>		
+			</ul>
+			--the auction then accepts the offer on <i>at most one</i> of the goods listed by an "OR" bids (whichever is best for the bidder, given the prices set by the auction).</li>
+			<li>The auctioneer can express rich preferences about how the numbers of units of the different varieties to be sold is determined.</li>
+        </ul>
+	  </div>
+		<button style="margin-top:10px" aria-expanded="false" aria-controls="more-2" class="toggle-content" hidden><span class="text">Read More</span> <span class="visually-hidden">about the Version for Budget-Constrained Bidders</span></button>
+	</article>
+	</p>
+		</div>
+    
+		<div class="col-md-6">
+			<p style="margin-top:4em; margin-bottom:1em; margin-left:5em; margin-right:0em;"><img src="screenshots/bids-in-price-space-3D.png" style="width:65%" alt="Graph of Bids in Price Space 3 Goods"></a></p> 
+			
+			<p style="margin-top:0em; margin-bottom:0em; margin-left:1em; margin-right:0em;"><img src="screenshots/bids-in-price-space-2D.png" style="width:85%" alt="Graph of Bids in price space 2 goods"></a></p>
+		</div>
+      </div>
+  </div>
+
+    
+	<div class="container" style="margin-top:-1em" >
+	  <div class="row" style="margin-top:-0em">
+        <div class="col-md-6">
+	<h2><i>Getting started:</i></h2>
+	<ol>
+		<li style="margin-bottom:10px"> See this <a href="https://www.nuffield.ox.ac.uk/users/klemperer/productmixslides.pptx">presentation</a> for an overview of Product-Mix Auctions.</li>
+		
+		<li style="margin-bottom:10px"> This <a href="https://www.nuffield.ox.ac.uk/users/klemperer/productmix.pdf">paper</a> explains and discusses Product-Mix Auctions in more detail; it focuses on the Standard Version (brief descriptions of other versions are in Appendices).</li>
+		
+		<li style="margin-bottom:10px"> Read this for a <a href="https://www.nuffield.ox.ac.uk/users/klemperer/pma-introduction.pdf">demonstration</a> of the software, with examples of its use, and a companion <a href="https://www.nuffield.ox.ac.uk/users/klemperer/pma-slides.pptx">slide set</a> with annotated screenshots.</li>
+		
+		<li style="margin-bottom:10px"> Access the <a href="http://pma.nuff.ox.ac.uk:3000/">PMA web app</a></li>
+	</ol>
+	
+	<h2><i>Additional Features and Further Information</i></h2>
+	<p>
+	<ul style="margin-bottom:1em" >
+		<li style="margin-bottom:10px">Read the <a href="content/doc/">User's guide (HTML)</a> or download the <a href="content/ProductMixAuction.pdf">PDF</a>.</li>
+		
+		<li style="margin-bottom:10px">You can also download a command line version (<a href="content/pma-setup-0.1.0.0.exe">Windows binary installer</a>, Mac binary installer (in preparation), <a href="content/product-mix-auction-0.1.0.0.tar.gz">Haskell source code archive (.tar.gz)</a>, and <a href="content/haddock/">Generated Haskell library documentation (HTML)</a>).</li>
+		
+		<li style="margin-bottom:10px">See these <a href="https://www.nuffield.ox.ac.uk/users/klemperer/linprog.pdf">Notes on solving the Standard Version using Linear Programming</a>.</li>
+		
+		<li style="margin-bottom:10px">Try out our <a href="http://pma.nuff.ox.ac.uk:3000/">"Positive and negative dot-bids" Version</a>; this extends the standard version to permit all participants (buyers and seller) to express <i>any</i> strong substitute preferences for indivisible goods (also available in command line version).</li>
+	</ul>
+	</p>
+	</div>
+	<div class="col-md-6">
+	
+		<p style="margin-top:4em; margin-bottom:0em; margin-left:3em; margin-right:0em;"><img src="screenshots/boe-supply-good2.png" style="width:75%" alt="Graph of Supply and demand"></a></p>
+
+      <p style="margin-top:4em; margin-bottom:0em; margin-left:3em; margin-right:0em;"><img src="screenshots/boe-tqss.png" style="width:75%" alt="Graph of TQSS and demand"></a></p><br><br><br><br>
+	</div>
+	</div>
+	
+	
+	
+	<p>
+		The software is all open-source (command-line program <tt>pma</tt>, and a web
+        application <tt>pma-server</tt>). We are developing the software further, and welcome contributions. Please let us know if you add, or making changes, to the source code.
+	</p>
+	
+	<p>
+		The web app we are hosting provides a single-user interface allowing an auction specification to be constructed in a web browser form. With the code provided, users can also host it locally.
+	</p>
+	
+	<p>
+		The source code is available to download using the <tt>git</tt> version control system: <tt>git clone <a href="http://pma.nuff.ox.ac.uk/content/git/product-mix-auction.git/">http://pma.nuff.ox.ac.uk/content/git/product-mix-auction.git/"</a></tt>		
+     </p>
+	  
+	<p style="font-size: 100%;">
+        This software is released under the <a href="http://www.gnu.org/licenses/agpl.html">GNU Affero General Public License.</a>
+    </p>
+	  
+	  
+      <p style="margin-bottom:2em" >
+        <strong>Please send any comments or corrections to 
+        <a href="mailto:&#101;&#108;&#105;&#122;&#97;&#98;&#101;&#116;&#104;&#46;&#98;&#97;&#108;&#100;&#119;&#105;&#110;&#64;&#101;&#99;&#111;&#110;&#111;&#109;&#105;&#99;&#115;&#46;&#111;&#120;&#46;&#97;&#99;&#46;&#117;&#107;">Elizabeth Baldwin</a>
+        or
+		<a href="mailto:&#112;&#097;&#117;&#108;&#046;&#107;&#108;&#101;&#109;&#112;&#101;&#114;&#101;&#114;&#064;&#110;&#117;&#102;&#102;&#105;&#101;&#108;&#100;&#046;&#111;&#120;&#046;&#097;&#099;&#046;&#117;&#107;">Paul Klemperer</a>.
+	    </strong>
+	  </p>
+	
+ <!/div>
+</div>
+
+
+	<script>
+		if ('querySelector' in document && 
+			'addEventListener' in window) {
+			var toggleButtons = document.querySelectorAll('.toggle-content');
+			var fullTextWrappers = document.querySelectorAll('.fulltext');
+			var fullText;
+			var toggleButtonText;
+			
+			[].forEach.call(fullTextWrappers, function(fullTextWrapper) {
+				// hide all full text on load
+				fullTextWrapper.setAttribute('hidden', true);
+			});
+			[].forEach.call(toggleButtons, function(toggleButton) {
+				// show toggle more buttons
+				toggleButton.removeAttribute('hidden');
+				// add listener for each button
+				toggleButton.addEventListener('click', function () {
+					fullTextWrapper = this.parentElement.querySelector('.fulltext');
+					toggleButtonText = this.querySelector('.text');
+					// change attributes and text if full text is shown/hidden
+					console.log(fullTextWrapper.hasAttribute('hidden'));
+					if (!fullTextWrapper.hasAttribute('hidden')) {
+						toggleButtonText.innerText = 'Read More';
+						fullTextWrapper.setAttribute('hidden', true);
+						toggleButton.setAttribute('aria-expanded', false);
+					} else {
+						toggleButtonText.innerText = 'Read Less';
+						fullTextWrapper.removeAttribute('hidden');
+						toggleButton.setAttribute('aria-expanded', true);
+					}
+				});
+			});
+		}
+	</script>
+	
+	 <!-- Bootstrap-JavaScript
+    ================================================== -->
+    <!-- Am Ende des Dokuments platziert, damit Seiten schneller laden -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+	
+	
+</body>
+</html>
