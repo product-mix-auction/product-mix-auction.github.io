@@ -127,3 +127,13 @@ button:focus .visually-hidden {
       padding:0;
       margin:0;
     }
+
+	.body {
+	color: #3b3b3b;
+	background-color: white;
+	margin-top: 2ex;
+	margin-bottom: 2ex;
+	margin-left: 6ex;
+	margin-right: 3ex;
+	}
+}
