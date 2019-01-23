@@ -75,7 +75,7 @@ hr {
 div.body {
   color: #3b3b3b;
   background-color: white;
-  margin-top: 2ex;
+  margin-top: 0ex;
   margin-bottom: 2ex;
   margin-left: 6ex;
   margin-right: 3ex;
@@ -111,6 +111,7 @@ text-indent: 5%;}
 	white-space: nowrap;
 	width: 1px;
 }
+
 a:hover .visually-hidden,
 a:focus .visually-hidden,
 button:hover .visually-hidden,
@@ -118,8 +119,30 @@ button:focus .visually-hidden {
 	position: relative;
 	margin: 0;
 }
+
 [hidden] {
 	display: none;
+}
+
+.pic1 {
+	margin-top:4em;
+	margin-bottom:1em;
+	margin-left:5em;
+	margin-right:0em;
+}
+
+.pic2 {
+	margin-top:3em; 
+	margin-bottom:0em; 
+	margin-left:3em; 
+	margin-right:0em;
+}
+
+.pic3 {
+	margin-top:3em; 
+	margin-bottom:0em; 
+	margin-left:1em; 
+	margin-right:0em;
 }
 
 @media (max-width: 978px) {
@@ -127,21 +150,18 @@ button:focus .visually-hidden {
       padding:0;
       margin:0;
     }
-	
 	.row {
       padding:0;
       margin:0;
     }
-	
 	.col-md-6 {
       padding:0;
       margin:0;
     }
-
 	div.body {
 	color: #3b3b3b;
 	background-color: white;
 	margin:0;
-	padding:0%;
+	padding:0;
 	}
 }
