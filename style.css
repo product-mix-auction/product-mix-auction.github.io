@@ -196,4 +196,16 @@ button:focus .visually-hidden {
 	margin-left:0em; 
 	margin-right:0em;
 	}
+	
+	.picwidth65 {
+	width:75%
+	}
+
+	.picwidth75 {
+	width:80%
+	}
+
+	.picwidth85 {
+	width:88%
+	}
 }
