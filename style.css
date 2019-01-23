@@ -128,7 +128,7 @@ button:focus .visually-hidden {
       margin:0;
     }
 
-	.body {
+	div.body {
 	color: #3b3b3b;
 	background-color: white;
 	margin:0;
