@@ -122,7 +122,8 @@ button:focus .visually-hidden {
 	display: none;
 }
 
-.col-centered{
-    float: none;
-    margin: 0 auto;
-}
+@media (max-width: 978px) {
+    .container {
+      padding:0;
+      margin:0;
+    }
