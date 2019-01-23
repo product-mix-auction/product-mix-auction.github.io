@@ -145,6 +145,18 @@ button:focus .visually-hidden {
 	margin-right:0em;
 }
 
+.picwidth65 {
+	width:65%
+}
+
+.picwidth75 {
+	width:75%
+}
+
+.picwidth85 {
+	width:85%
+}
+
 @media (max-width: 978px) {
     .container {
       padding:0;
