@@ -43,9 +43,14 @@
 
 	<p>
 	<article>
-	  Our <strong>Standard Version</strong> is a generalisation of the Bank of England's Indexed Long-Term Repo (ILTR) auction (described <a href="https://www.nuffield.ox.ac.uk/users/klemperer/productmix.pdf">here</a>). The Bank uses this auction monthly to allocate loans against different qualities of collateral.<br>
+	  Our <strong>Standard Version</strong> is a generalisation of the Bank of England's Indexed Long-Term Repo (ILTR) auction (described <a href="https://www.nuffield.ox.ac.uk/users/klemperer/productmix.pdf">here</a>). The Bank uses this auction monthly to allocate loans against different qualities of collateral. Options include
+	  <ul>
+		<li>maximising efficiency (the aggregate of the auctioneer's and bidders' profits), or maximising the auctioneer's profits</li>
+		<li>uniform pricing, or discriminatory (pay-as-bid) pricing</li>
+	  </ul>
 	
 	  <div style="margin-top:10px" id="more-1" class="fulltext">
+	  <i>Details of the procedure:</i>
 		<ul>
 		<li>Bidders simultaneously make sets of bids. Each bidder can make as many bids as desired.</li>
 		<li>Each of a bidder's bids specifies:
@@ -75,6 +80,7 @@
 	  Our <strong>Version for Budget-Constrained Bidders</strong> may be useful when, e.g., a country's creditors exchange their claims (nominal amounts of debt) for a choice among new debt instruments, or an acquired firm’s shareholders exchange their holdings (numbers of shares) for a choice of cash or new shares. This auction was originally developed for the Government of Iceland.<br>
 	  
 	  <div style="margin-top:10px" id="more-2" class="fulltext">
+	  <i>Details of the procedure:</i>
 		<ul>
 		<li>Bidders simultaneously make sets of bids. Each bidder can make as many bids as desired.</li>
 		<li>Each of a bidder's bids specifies:
@@ -101,7 +107,7 @@
     
 		<div class="col-md-6">
 			<div class="pic1">
-				<p><img class="picwidth65" src="screenshots/bids-in-price-space-3D.png" alt="Graph of Bids in Price Space 3 Goods"></p> 
+				<p><img class="picwidth85" src="screenshots/bids-in-price-space-2D.png" alt="Graph of Bids in price space 2 goods"></p>
 			</div>
 			<div class="pic2">
 				<p><img class="picwidth75" src="screenshots/boe-supply-good2.png" alt="Graph of Supply and demand"></p>
@@ -115,40 +121,52 @@
 	  <div class="row" style="margin-top:-0em">
         <div class="col-md-6">
 	<h2><i>Getting started:</i></h2>
-	<ol>
+	<ol style="margin-bottom:35px">
 		<li style="margin-bottom:10px"> See this <a href="https://www.nuffield.ox.ac.uk/users/klemperer/productmixslides.pptx">presentation</a> for an overview of Product-Mix Auctions.</li>
 		
 		<li style="margin-bottom:10px"> This <a href="https://www.nuffield.ox.ac.uk/users/klemperer/productmix.pdf">paper</a> explains and discusses Product-Mix Auctions in more detail; it focuses on the Standard Version (brief descriptions of other versions are in Appendices).</li>
 		
 		<li style="margin-bottom:10px"> Read this for a <a href="https://www.nuffield.ox.ac.uk/users/klemperer/pma-introduction.pdf">demonstration</a> of the software, with examples of its use, and a companion <a href="https://www.nuffield.ox.ac.uk/users/klemperer/pma-slides.pptx">slide set</a> with annotated screenshots.</li>
 		
-		<li style="margin-bottom:10px"> Access the <a href="http://pma.nuff.ox.ac.uk:3000/">PMA web app</a></li>
+		<li style="margin-bottom:10px"> Access the <a href="content/">PMA web app (requires password)</a></li>
 	</ol>
 	
-	<h2><i>Additional Features and Further Information</i></h2>
 	<p>
+        <strong>Please contact
+        <a href="mailto:&#101;&#108;&#105;&#122;&#97;&#98;&#101;&#116;&#104;&#46;&#98;&#97;&#108;&#100;&#119;&#105;&#110;&#64;&#101;&#99;&#111;&#110;&#111;&#109;&#105;&#99;&#115;&#46;&#111;&#120;&#46;&#97;&#99;&#46;&#117;&#107;">Elizabeth Baldwin</a>
+        or
+		<a href="mailto:&#112;&#097;&#117;&#108;&#046;&#107;&#108;&#101;&#109;&#112;&#101;&#114;&#101;&#114;&#064;&#110;&#117;&#102;&#102;&#105;&#101;&#108;&#100;&#046;&#111;&#120;&#046;&#097;&#099;&#046;&#117;&#107;">Paul Klemperer</a>
+	    for the password to access this software (free of charge), and send us any comments and corrections.</strong>
+	  </p>
+	
+	<h2><i>Additional Features and Further Information</i></h2>
+	<p style="margin-top:20px">
+	Access <a href="content/">Downloads (requires password)</a>:
 	<ul style="margin-bottom:1em" >
-		<li style="margin-bottom:10px">Read the <a href="content/doc/">User's guide (HTML)</a> or download the <a href="content/ProductMixAuction.pdf">PDF</a>.</li>
 		
-		<li style="margin-bottom:10px">You can also download a command line version (<a href="content/pma-setup-0.1.0.0.exe">Windows binary installer</a>, Mac binary installer (in preparation), <a href="content/product-mix-auction-0.1.0.0.tar.gz">Haskell source code archive (.tar.gz)</a>, and <a href="content/haddock/">Generated Haskell library documentation (HTML)</a>).</li>
+		<li style="margin-bottom:10px">Read the <i>User's guide (HTML)</i> or download the <i>PDF</i>.</li>
 		
-		<li style="margin-bottom:10px">See these <a href="https://www.nuffield.ox.ac.uk/users/klemperer/linprog.pdf">Notes on solving the Standard Version using Linear Programming</a>.</li>
+		<li style="margin-bottom:10px">You can also download a command line version (<i>Windows binary installer</i>, Mac binary installer (in preparation), <i>Haskell source code archive (.tar.gz)</i>, and <i>Generated Haskell library documentation (HTML)</i>).</li>
 		
-		<li style="margin-bottom:10px">Try out our <a href="http://pma.nuff.ox.ac.uk:3000/">"Positive and negative dot-bids" Version</a>; this extends the standard version to permit all participants (buyers and seller) to express <i>any</i> strong substitute preferences for indivisible goods (also available in command line version).</li>
+		<li style="margin-bottom:10px">See these <i>Notes on solving the Standard Version using Linear Programming</i>.</li>
+		
+		<li style="margin-bottom:10px">Try out our <i>"Positive and negative dot-bids" Version</i>; this extends the standard version to permit all participants (buyers and seller) to express <i>any</i> strong substitute preferences for indivisible goods (also available in command line version).</li>
 	</ul>
 	</p>
 	</div>
 	<div class="col-md-6">
-		<div class="pic2">
+		<div class="pic3">
 			<p><img class="picwidth75" src="screenshots/boe-tqss.png" alt="Graph of TQSS and demand"></p>
 		</div>
-		<div class="pic3">
-			<p><img class="picwidth85" src="screenshots/bids-in-price-space-2D.png" alt="Graph of Bids in price space 2 goods"></p>
+		<div class="pic4">
+				<p><img class="picwidth65" src="screenshots/bids-in-price-space-3D.png" alt="Graph of Bids in Price Space 3 Goods"></p> 
 		</div>
 	</div>
 	</div>
 	
-	
+	<div class="container">
+	  <div class="row" style="margin-bottom:0em">
+        <div class="col-md-12">
 	
 	<p>
 		The software is all open-source (command-line program <tt>pma</tt>, and a web
@@ -160,21 +178,25 @@
 	</p>
 	
 	<p>
-		The source code is available to download using the <tt>git</tt> version control system: <tt>git clone <a href="http://pma.nuff.ox.ac.uk/content/git/product-mix-auction.git/">http://pma.nuff.ox.ac.uk/content/git/product-mix-auction.git/"</a></tt>		
+		The source code is available to download using the <tt>git</tt> version control system: <tt>git clone <a href="http://pma.nuff.ox.ac.uk/content/git/product-mix-auction.git/">http://pma.nuff.ox.ac.uk/content/git/product-mix-auction.git/ (requires password)"</a></tt>		
      </p>
 	  
 	<p style="font-size: 100%;">
         This software is released under the <a href="http://www.gnu.org/licenses/agpl.html">GNU Affero General Public License.</a>
     </p>
 	  
-	  
+	  <!--
       <p style="margin-bottom:2em" >
         <strong>Please send any comments or corrections to 
         <a href="mailto:&#101;&#108;&#105;&#122;&#97;&#98;&#101;&#116;&#104;&#46;&#98;&#97;&#108;&#100;&#119;&#105;&#110;&#64;&#101;&#99;&#111;&#110;&#111;&#109;&#105;&#99;&#115;&#46;&#111;&#120;&#46;&#97;&#99;&#46;&#117;&#107;">Elizabeth Baldwin</a>
         or
 		<a href="mailto:&#112;&#097;&#117;&#108;&#046;&#107;&#108;&#101;&#109;&#112;&#101;&#114;&#101;&#114;&#064;&#110;&#117;&#102;&#102;&#105;&#101;&#108;&#100;&#046;&#111;&#120;&#046;&#097;&#099;&#046;&#117;&#107;">Paul Klemperer</a>.
 	    </strong>
-	  </p>
+	  </p> -->
+	</div>
+</div>
+</div>	
+	  
 	
  <!/div>
 </div>
